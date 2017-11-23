@@ -2,16 +2,56 @@
   
   ### OSI七层模型
   ###### OSI是Open System Interconnect的缩写，意为开放式系统互联。
-
-  OSI|功能|设备|对应协议  
-  -|-|-  
-  应用层 | 为不同的应用场景提供不同的服务(超文本传输，电子邮件，文件传输,文件服务，虚拟终端) | 网关 | HTTP(80/TCP), HTTPS(443/UDP),FTP(TCP/21),TFTP(69/UDP),SNMP(25/TCP),SMTP(25/TCP)，DNS(53/TCP或UDP)，POP3(110/TCP),Telnet(23/TCP)  
-  表示层 | 数据的表示、压缩和加密（数据格式化，代码转换，数据加密) | 网关 | 无   
-  会话层 | 提供包括访问验证和会话管理(会话的建立和结束) | 网关 | 无  
-  传输层 | 提供端对端的连接 | 网关 | TCP，UDP  
-  网络层 | 1.对应用层数据分组传送2.选择合适的路由|路由器 | IP，ICMP,IGMP,ARP,RARP  
-  数据链路层 | 1.封装数据包为数据帧；2.在不可靠的物理介质上提供可靠的传输 |  网卡、交换机、网桥 | PPP，SLIP，CSLIP，MTU  
-  物理层 | 传输比特流，以二进制数据形式在物理媒体上传输数据 | 集线器、中继器、调制解调器 | ISO2110，IEEE802，IEEE802.2  
+<table style="font-size:14px">
+  <tr>
+    <th width=10%, bgcolor=yellow >OSI  </th>
+    <th width=50%, bgcolor=yellow >功能    </th>
+    <th width=20%, bgcolor=yellow >设备 </th>
+    <th width=20%, bgcolor=yellow >对应协议</th>
+  </tr>
+  <tr>
+    <td>应用层</td>
+    <td>为不同的应用场景提供不同的服务(超文本传输，电子邮件，文件传输,文件服务，虚拟终端)</td>
+    <td>网关</td>
+    <td>HTTP(80/TCP), HTTPS(443/UDP),FTP(TCP/21),TFTP(69/UDP),SNMP(25/TCP),SMTP(25/TCP)，DNS(53/TCP或UDP)，POP3(110/TCP),Telnet(23/TCP)</td>
+  </tr>
+  <tr>
+    <td>表示层</td>
+    <td>数据的表示、压缩和加密（数据格式化，代码转换，数据加密)</td>
+    <td>网关</td>
+    <td>无</td>
+  </tr>
+  <tr>
+    <td>会话层</td>
+    <td>提供包括访问验证和会话管理(会话的建立和结束)</td>
+    <td>网关</td>
+    <td>无</td>
+  </tr>
+  <tr> 
+    <td>传输层</td>
+    <td>提供端对端的连接</td>
+    <td>网关</td>
+    <td>TCP，UDP</td>
+  </tr>
+  <tr>
+    <td>网络层</td>
+    <td>1.对应用层数据分组传送2.选择合适的路由</td>
+    <td>路由器</td>
+    <td>IP，ICMP,IGMP,ARP,RARP</td>
+  </tr>
+  <tr>
+    <td>数据链路层</td>
+    <td> 1.封装数据包为数据帧；2.差错校验</td>
+    <td>网卡、交换机、网桥</td>
+    <td>PPP，SLIP，CSLIP，MTU</td>
+  </tr>
+  <tr>
+    <td>物理层</td>
+    <td>传输比特流，以二进制数据形式在物理媒体上传输数据</td>
+    <td>集线器、中继器、调制解调器</td>
+    <td>ISO2110，IEEE802，IEEE802.2</td>
+  </tr>  
+</table>
 ### TCP/IP四层协议栈  
 __OSI七层模型与TCP/IP四层协议栈的对应关系:__
 ![](picture/OSIAndTCP,IP.png)
