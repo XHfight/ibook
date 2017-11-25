@@ -53,7 +53,7 @@ __解决方案__:
 <h2 id="3">基于Client端的Cookie会话管理</h2>  
 __<font color=red>会话信息存储在客户端</font>__  
 最常见的HTTP客户端--浏览器,使用cookie来存储会话信息(会话信息存储在客户端浏览器),由于Session的方案会增加服务器的负担,所以后来就有人想出直接把会话信息存储在客户端的方案,用户登录后,直接把cookie保存在cookie中,并给cookie设置有效期.  
-- <font color = red ><b>Cookie会话管理的过程</b></font>
+- __<font color = red >Cookie会话管理的过程</font>__
 	1.  用户发起登录请求,服务端跟据输入的用户名,密码等信息来判断用户是否满足条件,如果满足条件,就根据用户信息创建一个cookie发送回浏览器。  
 	2. 以后每次http请求都会带上cookie,服务器端接收到浏览器发送的所有cookie之后,通过name来取对应的值(cookie中是使用键值对来存储信息的)。通过这些值来跟踪用户的状态.
 	
