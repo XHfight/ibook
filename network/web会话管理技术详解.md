@@ -57,7 +57,7 @@ __<font color=red>会话信息存储在客户端</font>__
 	1.  用户发起登录请求,服务端跟据输入的用户名,密码等信息来判断用户是否满足条件,如果满足条件,就根据用户信息创建一个cookie发送回浏览器。  
 	2. 以后每次http请求都会带上cookie,服务器端接收到浏览器发送的所有cookie之后,通过name来取对应的值(cookie中是使用键值对来存储信息的)。通过这些值来跟踪用户的状态.
 	
-- __<font color = red >cookie中信息的存储</font>__:
+- __<font color = red >cookie存储信息</font>__:
 
   1. cookie文件跟据不同的浏览器存储在本地的不同目录下,各个cookie之间是按域来区分的,一个域下存储当前域的cookie信息.
   2.  一个Cookie只能标识一种信息,采用key(name)/value的形式来存储会话信息.name=JSESSIONID(不固定,不同web服务器名字可能不一样), value = XXX,value中存储的就是session id.
