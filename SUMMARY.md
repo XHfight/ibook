@@ -9,5 +9,6 @@
   * 命令
     * [netstat](linux/command/nestat命令.md)
 * mysql
-  * [存储引擎](mysql/数据库存储引擎.md)
-  * [事务](mysql/事务.md)
+  * [存储引擎](数据库/数据库存储引擎.md)
+  * [事务](数据库/事务.md)
+  * [redis](数据库/redis.md)
